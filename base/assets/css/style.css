@@ -32,12 +32,15 @@ a {
   top: 0px;
   width: 100%;
   z-index: 9999;
-  color: #fff;
   transition: color 0.4s ease-out;
+  /* color: #fbfaf3; */
+  /* color: #f8f5e3; */
+  color: #4b2d16;
 }
 
 .header.headerColorScroll {
   color: #333;
+  font-size: 14px;
   transition: color 0.4s ease-out;
 }
 
@@ -46,7 +49,7 @@ a {
   max-width: 1140px;
   margin: 0 auto;
   padding: 22px 0;
-  font-size: 12px;
+  font-size: 32px;
 }
 
 .header .navList {
@@ -60,11 +63,13 @@ a {
 
 /* ========== firstView ========== */
 .firstView {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-image: url(../img/firstView02.jpg);
+  background-image: url(../img/firstView03.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
 }
 
 .firstView .title {
