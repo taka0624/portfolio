@@ -33,9 +33,7 @@ a {
   width: 100%;
   z-index: 9999;
   transition: color 0.4s ease-out;
-  /* color: #fbfaf3; */
-  /* color: #f8f5e3; */
-  color: #4b2d16;
+  color: #fff;
 }
 
 .header.headerColorScroll {
@@ -49,7 +47,7 @@ a {
   max-width: 1140px;
   margin: 0 auto;
   padding: 22px 0;
-  font-size: 32px;
+  font-size: 14px;
 }
 
 .header .navList {
@@ -63,6 +61,7 @@ a {
 
 /* ========== firstView ========== */
 .firstView {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background-image: url(../img/firstView03.jpg);
@@ -72,19 +71,17 @@ a {
   opacity: 0.8;
 }
 
-.firstView .title {
+.firstView .overlay {
   position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translateY(-50%) translateX(-50%);
-  font-size: 60px;
-  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* ========== achievement ========== */
 .achievement {
   width: 100%;
-  padding: 120px 0 30px;
+  padding: 120px;
 
 }
 
@@ -96,7 +93,7 @@ a {
 
 .achievement .container {
   width: 100%;
-  margin-top: 90px;
+  margin-top: 30px;
 }
 
 .achievement .posts {
@@ -106,30 +103,34 @@ a {
 }
 
 .posts .post {
-  width: 50%;
-  padding: 10px;
+  width: 32%;
+}
+
+.posts .post:nth-child(n+4)  {
+  margin-top: 22.8px;
 }
 
 .achievement .posts .post .image {
   width: 100%;
-  padding-top: 100%;
+  padding-top: 156.3934%;
   background-position: center;
   background-size: cover;
   background-image: url(../img/postImg01.jpg);
 }
 
 .achievement .posts .post .image:hover {
-  opacity: 0.75;
+  filter: brightness(65%);
   transition-duration: 0.3s;
 }
 
 .achievement .anchorWrap {
   margin-top: 30px;
   text-align: right;
+  line-height: 2;
 }
 
 .achievement .anchorWrap .anchor {
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   border-bottom: #333 solid 1px;
 }
 
@@ -142,6 +143,8 @@ a {
 .about {
   width: 100%;
   padding: 120px 0;
+  background-color: #000;
+  color: #fff;
 }
 
 .about .inner {
@@ -153,11 +156,10 @@ a {
 .about .content {
   width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
 .about .content .imageWrap {
-  width: 36.5%;
+  width: 32%;
 }
 
 .about .content .imageWrap .image {
