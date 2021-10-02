@@ -8,3 +8,35 @@ $(function () {
     }
   });
 });
+
+jQuery(function ($) {
+
+  function displaySpMenu() {
+
+    const $spMenu = $('#spMenu');
+    const $headerNav = $('#headerNav');
+
+    function noscrollBody() {
+      $('body').toggleClass('noscroll');
+    }
+
+    function crossBtn() {
+      $spMenu.toggleClass('cross');
+    }
+
+    function toggleHeaderNav() {
+      $headerNav.fadeToggle(300);
+    }
+
+    function init() {
+      toggleHeaderNav();
+      noscrollBody();
+      crossBtn();
+    }
+
+    $spMenu.on('click', init);
+  }
+
+  displaySpMenu();
+
+});
