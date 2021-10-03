@@ -32,13 +32,13 @@ a {
   z-index: 9999;
   top: 0px;
   width: 100%;
-  color: #fff;
+  color: inherit;
+  font-size: 14px;
   transition: color 0.4s ease-out;
 }
 
 .header.headerColorScroll {
-  color: #333;
-  font-size: 14px;
+  color: #fff;
   transition: color 0.4s ease-out;
 }
 
@@ -154,18 +154,18 @@ a {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.achievement {
+.work {
   width: 100%;
   padding: 120px 0 60px;
 }
 
-.achievement .container {
+.work .container {
   width: 96%;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.achievement .postsWrap {
+.work .postsWrap {
   width: 100%;
   margin-top: 30px;
 }
@@ -267,6 +267,25 @@ a {
   opacity: 0.9;
 }
 
+ /* ========== article ========== */
+.articleWrapper {
+  padding: 120px 0;
+}
+
+.articleWrapper .container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.articleWrapper .title {
+  text-align: center;
+}
+
+.articleWrapper .posts {
+  margin-top: 30px;
+}
+
 /* -----  min-width: 641px ----- */
 @media screen and (min-width: 641px) {
   .header .globalMenu .item:nth-child(n+2) {
@@ -364,7 +383,7 @@ a {
   }
 
   .header.headerColorScroll .spMenu .bar{
-    background-color: #333;
+    background-color: #fff;
     transition: background-color 0.4s ease-out;
   }
 
@@ -383,7 +402,7 @@ a {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #333;
     transition: .3s;
   }
 
