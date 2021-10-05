@@ -45,44 +45,47 @@
 		</div>
 	</header>
 	<main class="main">
-    <div class="formWrapper">
+    <div class="confirmWrapper">
       <div class="container">
         <h2 class="title">
           Contact
         </h2>
         <p class="text">
-          制作依頼やご相談はお気軽にお問い合わせください。
+          以下の無用でよろしければ<span class="emphasis">Send</span>を押してください。
         </p>
-        <div class="formWrap">
-          <form action="#" method="POST">
-            <dl>
-              <dt>
-                <label for="name">Name:</label>
-              </dt>
-              <dd>
-                <input type="text" class="input" id="name">
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <label for="email">Email:</label>
-              </dt>
-              <dd>
-                <input type="email" class="input" id="email">
-              </dd>
-            </dl>
-            <dl>
-              <dt>
-                <label for="text">Message:</label>
-              </dt>
-              <dd>
-                <textarea id="text"></textarea>
-              </dd>
-            </dl>
-            <p class="btnWrap">
-              <input type="button" class="btn" value="Send">
-            </p>
-          </form>
+        <div class="contactWrap">
+          <dl class="items">
+            <dt>
+              Name:
+            </dt>
+            <dd>
+              山田太郎
+            </dd>
+          </dl>
+          <dl class="items">
+            <dt>
+              Email:
+            </dt>
+            <dd>
+              example@example.com
+            </dd>
+          </dl>
+          <dl class="items">
+            <dt>
+              Message:
+            </dt>
+            <dd>
+              ここにお問い合わせの内容が入っていきます。
+            </dd>
+          </dl>
+        </div>
+        <div class="confirmWrap">
+          <p class="btnWrap">
+            <input type="button" class="btn secondaryBtn" value="Back">
+          </p>
+          <p class="btnWrap">
+            <input type="button" class="btn primaryBtn" value="Send">
+          </p>
         </div>
       </div>
     </div>

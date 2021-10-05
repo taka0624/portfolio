@@ -114,19 +114,27 @@ textarea {
 
 /* ----- btn ----- */
 .btnWrap {
-  margin-top: 20px;
   line-height: 2;
   text-align: center;
 }
 
 .btnWrap .btn {
   padding-bottom: 7px;
-  border-bottom: #333 solid 1px;
+  font-size: 16px;
 }
 
 .btnWrap .btn:hover {
   opacity: 0.50;
   transition-duration: 0.3s;
+}
+
+.primaryBtn {
+  border-bottom: #333 solid 1px;
+}
+
+.secondaryBtn {
+  border-bottom: #808080 solid 1px;
+  color: #808080;
 }
 
 /* posts */
@@ -329,10 +337,9 @@ textarea {
 }
 
  /* ========== form ========== */
-  /* ========== form ========== */
-  .formWrapper {
-    padding: 120px 0 60px;
-  }
+.formWrapper {
+  padding: 120px 0 60px;
+}
 
 .formWrapper .container {
   width: 96%;
@@ -342,6 +349,10 @@ textarea {
 
 .formWrapper .title {
   text-align: center;
+}
+
+.formWrapper .text {
+  margin-top: 30px;
 }
 
 .formWrapper .container .formWrap {
@@ -379,6 +390,55 @@ textarea {
 
 .formWrapper .container .formWrap textarea:focus {
   outline: solid 2px #ccc;
+}
+
+ /* ========== confirm ========== */
+.confirmWrapper {
+  padding: 120px 0 60px;
+}
+
+.confirmWrapper .container {
+  width: 96%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.confirmWrapper .title {
+  text-align: center;
+}
+
+.confirmWrapper .text {
+  margin-top: 30px;
+}
+
+.confirmWrapper .container .text .emphasis {
+  font-weight: bold;
+}
+
+.confirmWrapper .container .contactWrap {
+  margin-top: 40px;
+}
+
+.confirmWrapper .container .items:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.confirmWrapper .container .items {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #eee;
+  line-height: 1;
+}
+
+.confirmWrapper .container .confirmWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.confirmWrapper .container .confirmWrap .btnWrap:nth-child(2) {
+  margin-left: 20px;
 }
 
 /* -----  min-width: 641px ----- */
@@ -446,6 +506,11 @@ textarea {
 
   .singleWrapper .deliverableWrap .content {
     margin-left: 30px;
+  }
+
+  /* ========== confirm ========== */
+  .confirmWrapper .container .items dt {
+    min-width: 244px;
   }
 }
 
@@ -572,5 +637,14 @@ textarea {
 
   .singleWrapper .deliverableWrap .content {
     margin-top: 30px;
+  }
+
+  /* ========== confirm ========== */
+  .confirmWrapper .container .items {
+    display: block;
+  }
+
+  .confirmWrapper .container .items dd {
+    margin-top: 20px;
   }
 }
