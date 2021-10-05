@@ -457,6 +457,34 @@ textarea {
   margin-top: 200px;
 }
 
+/* complete*/
+.completeWrapper {
+  padding: 120px 0;
+}
+
+.completeWrapper .container {
+  width: 96%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.completeWrapper .title {
+  text-align: center;
+}
+
+.completeWrapper .container .text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.completeWrapper .container .btnWrap {
+  margin-top: 30px;
+}
+
+.completeWrapper + .footer {
+  margin-top: 400px;
+}
+
 /* -----  min-width: 641px ----- */
 @media screen and (min-width: 641px) {
   .header .globalMenu .item:nth-child(n+2) {
