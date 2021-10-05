@@ -156,6 +156,12 @@ textarea {
 }
 
 /* ========== index ========== */
+.indexWrapper .container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .indexWrapper .firstView {
   position: relative;
   width: 100vw;
@@ -166,10 +172,7 @@ textarea {
 
 .indexWrapper .firstView .container {
   position: relative;
-  width: 96%;
-  max-width: 1140px;
   height: 100vh;
-  margin: 0 auto;
 }
 
 .indexWrapper .firstView .container .title {
@@ -194,12 +197,6 @@ textarea {
   padding: 120px 0 60px;
 }
 
-.indexWrapper .work .container {
-  width: 96%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 .indexWrapper .work .postsWrap {
   width: 100%;
   margin-top: 30px;
@@ -210,13 +207,11 @@ textarea {
   padding: 120px 0;
 }
 
-.indexWrapper .skill .container {
-  width: 96%;
-  max-width: 1140px;
-  margin: 0 auto;
+.indexWrapper .skill .titleWrap .anchorWrap {
+  margin-top: 20px;
 }
 
-.indexWrapper .skill .titleWrap .anchorWrap {
+.indexWrapper .skill .titleWrap .text {
   margin-top: 20px;
 }
 
@@ -241,11 +236,6 @@ textarea {
   background-color: #000;
 }
 
-.indexWrapper .about .container {
-  width: 96%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
 
 .indexWrapper .about .content {
   width: 100%;
@@ -277,9 +267,6 @@ textarea {
 }
 
 .indexWrapper .contact .container {
-  width: 96%;
-  max-width: 1140px;
-  margin: 0 auto;
   display: flex;
 }
 
