@@ -25,6 +25,16 @@ a {
   color: inherit;
 }
 
+input {
+  border: none;
+  padding: 0;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
 /* ========== component ========== */
 /* ----- header ----- */
 .header {
@@ -98,6 +108,23 @@ a {
 }
 
 .anchorWrap .anchor:hover {
+  opacity: 0.50;
+  transition-duration: 0.3s;
+}
+
+/* ----- btn ----- */
+.btnWrap {
+  margin-top: 20px;
+  line-height: 2;
+  text-align: center;
+}
+
+.btnWrap .btn {
+  padding-bottom: 7px;
+  border-bottom: #333 solid 1px;
+}
+
+.btnWrap .btn:hover {
   opacity: 0.50;
   transition-duration: 0.3s;
 }
@@ -299,6 +326,59 @@ a {
 
 .singleWrapper .deliverableWrap {
   margin-top: 30px;
+}
+
+ /* ========== form ========== */
+  /* ========== form ========== */
+  .formWrapper {
+    padding: 120px 0 60px;
+  }
+
+.formWrapper .container {
+  width: 96%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.formWrapper .title {
+  text-align: center;
+}
+
+.formWrapper .container .formWrap {
+  margin-top: 30px;
+}
+
+.formWrapper .container .formWrap dl:nth-child(n+2) {
+  margin-top: 30px;
+}
+
+.formWrapper .container .formWrap dd {
+  margin-top: 15px;
+}
+
+.formWrapper .container .formWrap .input {
+  width: 100%;
+  border: solid 1px #ccc ;
+}
+
+.formWrapper .container .formWrap .inputAria {
+  width: 100%;
+  height: 26px;
+  border: solid 1px #ccc;
+}
+
+.formWrapper .container .formWrap .inputAria:focus {
+  outline: solid 2px #ccc;
+}
+
+.formWrapper .container .formWrap textarea {
+  width: 100%;
+  height: 326px;
+  border: solid 1px #ccc;
+}
+
+.formWrapper .container .formWrap textarea:focus {
+  outline: solid 2px #ccc;
 }
 
 /* -----  min-width: 641px ----- */
