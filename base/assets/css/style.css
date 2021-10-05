@@ -156,7 +156,7 @@ textarea {
 }
 
 /* ========== index ========== */
-.firstView {
+.indexWrapper .firstView {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -164,7 +164,7 @@ textarea {
   opacity: 0.8;
 }
 
-.firstView .container {
+.indexWrapper .firstView .container {
   position: relative;
   width: 96%;
   max-width: 1140px;
@@ -172,7 +172,7 @@ textarea {
   margin: 0 auto;
 }
 
-.firstView .container .title {
+.indexWrapper .firstView .container .title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -182,49 +182,49 @@ textarea {
   transform: translate(-50%,-50%);
 }
 
-.firstView .overlay {
+.indexWrapper .firstView .overlay {
   position: absolute;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.4);
 }
 
-.work {
+.indexWrapper .work {
   width: 100%;
   padding: 120px 0 60px;
 }
 
-.work .container {
+.indexWrapper .work .container {
   width: 96%;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.work .postsWrap {
+.indexWrapper .work .postsWrap {
   width: 100%;
   margin-top: 30px;
 }
 
-.skill {
+.indexWrapper .skill {
   width: 100%;
   padding: 120px 0;
 }
 
-.skill .container {
+.indexWrapper .skill .container {
   width: 96%;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.skill .titleWrap .text {
+.indexWrapper .skill .titleWrap .text {
   margin-top: 20px;
 }
 
-.skill .titleWrap .anchorWrap {
+.indexWrapper .skill .titleWrap .anchorWrap {
   margin-top: 20px;
 }
 
-.skill .skillList {
+.indexWrapper .skill .skillList {
   display: grid;
   justify-content: center;
   grid-gap: 10px;
@@ -233,69 +233,69 @@ textarea {
   grid-auto-flow: column;
 }
 
-.skill .imgWrap {
+.indexWrapper .skill .imgWrap {
   width: 100px;
   height: auto;
 }
 
-.about {
+.indexWrapper .about {
   width: 100%;
   padding: 120px 0;
   color: #fff;
   background-color: #000;
 }
 
-.about .container {
+.indexWrapper .about .container {
   width: 96%;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.about .content {
+.indexWrapper .about .content {
   width: 100%;
 }
 
-.about .content .bgWrap {
+.indexWrapper .about .content .bgWrap {
   min-width: 300px;
 }
 
-.about .content .bgWrap .portrait {
+.indexWrapper .about .content .bgWrap .portrait {
   width: 100%;
   padding-top: 156.3934%;
   background-image: url(../img/aboutImg01.jpg);
 }
 
-.about .content .aboutWrap .name {
+.indexWrapper .about .content .aboutWrap .name {
   margin-top: 30px;
   font-size: 34px;
 }
 
-.about .content .aboutWrap .text {
+.indexWrapper .about .content .aboutWrap .text {
   margin-top: 30px;
   line-height: 2;
 }
 
-.contact {
+.indexWrapper .contact {
   width: 100%;
   padding: 120px 0 80px;
 }
 
-.contact .container {
+.indexWrapper .contact .container {
   width: 96%;
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
 }
 
-.contact .content {
+.indexWrapper .contact .content {
   width: 100%;
 }
 
-.contact .content .contactWrap .text {
+.indexWrapper .contact .content .contactWrap .text {
   margin-top: 20px;
 }
 
-.contact .content .bgWrap .typewriter {
+.indexWrapper .contact .content .bgWrap .typewriter {
   width: 100%;
   padding-top: 56.3934%;
   background-image: url(../img/contactImg01.jpg);
@@ -304,7 +304,7 @@ textarea {
 
  /* ========== article ========== */
 .articleWrapper {
-  padding: 120px 0;
+  padding: 120px 0 60px;
 }
 
 .articleWrapper .container {
@@ -321,9 +321,13 @@ textarea {
   margin-top: 30px;
 }
 
+.articleWrapper  + .footer {
+  margin-top: 60px;
+}
+
  /* ========== single ========== */
 .singleWrapper {
-  padding: 60px 0 120px;
+  padding: 60px 0 60px;
 }
 
 .singleWrapper .container {
@@ -334,6 +338,10 @@ textarea {
 
 .singleWrapper .deliverableWrap {
   margin-top: 30px;
+}
+
+.singleWrapper  + .footer {
+  margin-top: 60px;
 }
 
  /* ========== form ========== */
@@ -392,9 +400,13 @@ textarea {
   outline: solid 2px #ccc;
 }
 
+.formWrapper + .footer {
+  margin-top: 60px;
+}
+
  /* ========== confirm ========== */
 .confirmWrapper {
-  padding: 120px 0 60px;
+  padding: 120px 0;
 }
 
 .confirmWrapper .container {
@@ -441,13 +453,17 @@ textarea {
   margin-left: 20px;
 }
 
+.confirmWrapper + .footer {
+  margin-top: 200px;
+}
+
 /* -----  min-width: 641px ----- */
 @media screen and (min-width: 641px) {
   .header .globalMenu .item:nth-child(n+2) {
     margin-left: 20px;
   }
 
-  header .spMenu{
+  .header .spMenu{
     display: none;
   }
 
@@ -460,35 +476,35 @@ textarea {
   }
 
   /* ========== index ========== */
-  .firstView .container .title {
+  .indexWrapper .firstView .container .title {
     font-size: 64px;
   }
 
-  .skill .skillList {
+  .indexWrapper .skill .skillList {
     min-width: 340px;
     margin-top: 20px;
   }
 
-  .about .content {
+  .indexWrapper .about .content {
     width: 100%;
     display: flex;
   }
 
-  .about .content .portrait {
+  .indexWrapper .about .content .portrait {
     width: 32%;
   }
 
-  .about .content .aboutWrap {
+  .indexWrapper .about .content .aboutWrap {
     margin-left: 30px;
   }
 
-  .contact .content {
+  .indexWrapper .contact .content {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
 
-  .contact .content .bgWrap {
+  .indexWrapper .contact .content .bgWrap {
     width: 40%;
     min-width: 360px;
     margin-left: 30px;
@@ -521,7 +537,8 @@ textarea {
     overflow: hidden;
   }
 
-  header nav {
+  /* header */
+  .header nav {
     display: none;
     position: fixed;
     top: 0;
@@ -541,18 +558,18 @@ textarea {
     height: 100%;
   }
 
-  header .globalMenu .item {
+  .header .globalMenu .item {
     width: 96%;
     margin: 20px auto 0;
     padding-bottom: 20px;
     text-align: center;
   }
 
-  header .globalMenu .item:first-child {
+  .header .globalMenu .item:first-child {
     margin-top: 40px;
   }
 
-  header .globalMenu:last-of-type {
+  .header .globalMenu:last-of-type {
     margin-bottom: 0;
   }
 
@@ -609,24 +626,24 @@ textarea {
   }
 
   /* ========== index ========== */
-  .firstView .container .title {
+  .indexWrapper .firstView .container .title {
     font-size: 48px;
   }
 
-  .skill .skillList {
+  .indexWrapper .skill .skillList {
     margin: 20px auto 0;
   }
 
-  .about .content .aboutWrap {
+  .indexWrapper .about .content .aboutWrap {
     margin-top: 30px;
   }
 
-  .about .content .bgWrap .portrait {
+  .indexWrapper .about .content .bgWrap .portrait {
     padding-top: 56.3934%;
     background-position: 50% 25%;
   }
 
-  .contact .content .bgWrap {
+  .indexWrapper .contact .content .bgWrap {
     margin-top: 20px;
   }
 
