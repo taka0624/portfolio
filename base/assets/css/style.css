@@ -186,7 +186,7 @@ textarea {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .indexWrapper .work {
@@ -214,10 +214,6 @@ textarea {
   width: 96%;
   max-width: 1140px;
   margin: 0 auto;
-}
-
-.indexWrapper .skill .titleWrap .text {
-  margin-top: 20px;
 }
 
 .indexWrapper .skill .titleWrap .anchorWrap {
@@ -346,10 +342,6 @@ textarea {
   margin-top: 30px;
 }
 
-.singleWrapper .deliverableWrap .content {
-  padding: 30px 0;
-}
-
 .singleWrapper .deliverableWrap .content dt:nth-child(n+2) {
   margin-top: 30px;
 }
@@ -359,6 +351,47 @@ textarea {
 }
 
 .singleWrapper  + .footer {
+  margin-top: 60px;
+}
+
+/* ========== skills ========== */
+.skillsWrapper {
+  padding: 120px 0;
+}
+
+.skillsWrapper .container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.skillsWrapper .title {
+  text-align: center;
+}
+
+.skillsWrapper .skills {
+  margin-top: 60px;
+}
+
+.skillsWrapper .skills .skill {
+  display: flex;
+  width: 50%;
+  min-width: 50%;
+}
+
+.skillsWrapper .skills .skill .imgWrap {
+  min-width: 150px;
+}
+
+.skillsWrapper .skills .skill .textWrap .heading {
+  font-weight: bold;
+}
+
+.skillsWrapper .skills .skill .textWrap .text {
+  margin-top: 10px;
+}
+
+.skillsWrapper  + .footer {
   margin-top: 60px;
 }
 
@@ -503,6 +536,24 @@ textarea {
   margin-top: 400px;
 }
 
+/* -----  max-width: 1024px ----- */
+@media screen and (max-width: 1024px) {
+  /* ========== skills ========== */
+  .skillsWrapper .skills {
+    align-items: center;
+  }
+
+  .skillsWrapper .skills .skill {
+    display: flex;
+    width: 100%;
+  }
+
+  .skillsWrapper .skills .skill:nth-child(n+2) {
+    margin-top: 30px;
+  }
+
+}
+
 /* -----  min-width: 641px ----- */
 @media screen and (min-width: 641px) {
   .header .globalMenu .item:nth-child(n+2) {
@@ -568,6 +619,17 @@ textarea {
 
   .singleWrapper .deliverableWrap .content {
     margin-left: 30px;
+    padding: 30px 0;
+  }
+
+  /* ========== skills ========== */
+  .skillsWrapper .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skillsWrapper .skills .skill:nth-child(n+3) {
+    margin-top: 30px;
   }
 
   /* ========== confirm ========== */
