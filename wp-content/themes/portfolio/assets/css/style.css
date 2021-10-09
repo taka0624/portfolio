@@ -1,0 +1,762 @@
+/* ========== base ========== */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'HiraKakuPro-W3', sans-serif;
+  color: #333;
+  word-break: break-word;
+}
+
+img {
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+  padding: 0;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ========== component ========== */
+/* ----- header ----- */
+.header {
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
+  width: 100%;
+  color: inherit;
+  font-size: 14px;
+  transition: color 0.4s ease-out;
+}
+
+.header.headerColorScroll {
+  color: #fff;
+  transition: color 0.4s ease-out;
+}
+
+.header .inner {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 22px 0;
+}
+
+.header .globalMenu {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* ----- footer ----- */
+.footer {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.footer .inner {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.footer .inner .copyright {
+  font-size: 12px;
+}
+
+/* title */
+.title {
+  font-size: 32px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* bgImg */
+.bgImg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ----- anchor ----- */
+.anchorWrap {
+  margin-top: 20px;
+  line-height: 2;
+  text-align: right;
+}
+
+.anchorWrap .anchor {
+  padding-bottom: 7px;
+  border-bottom: #333 solid 1px;
+}
+
+.anchorWrap .anchor:hover {
+  opacity: 0.50;
+  transition-duration: 0.3s;
+}
+
+/* ----- btn ----- */
+.btnWrap {
+  line-height: 2;
+  text-align: center;
+}
+
+.btnWrap .btn {
+  padding-bottom: 7px;
+  font-size: 16px;
+}
+
+.btnWrap .btn:hover {
+  opacity: 0.50;
+  transition-duration: 0.3s;
+}
+
+.primaryBtn {
+  border-bottom: #333 solid 1px;
+}
+
+.secondaryBtn {
+  border-bottom: #808080 solid 1px;
+  color: #808080;
+}
+
+/* posts */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.posts .post:hover {
+  filter: brightness(65%);
+  transition-duration: 0.3s;
+}
+
+.thumbnail {
+  width: 100%;
+  padding-top: 156.3934%;
+  background-image: url(../img/postImg01.jpg);
+}
+
+/* ========== index ========== */
+.indexWrapper .container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.indexWrapper .firstView {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/firstView03.jpg);
+  opacity: 0.8;
+}
+
+.indexWrapper .firstView .container {
+  position: relative;
+  height: 100vh;
+}
+
+.indexWrapper .firstView .container .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transform: translate(-50%,-50%);
+}
+
+.indexWrapper .firstView .overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.indexWrapper .work {
+  width: 100%;
+  padding: 120px 0 60px;
+}
+
+.indexWrapper .work .postsWrap {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.indexWrapper .skill {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.indexWrapper .skill .titleWrap .anchorWrap {
+  margin-top: 20px;
+}
+
+.indexWrapper .skill .titleWrap .text {
+  margin-top: 20px;
+}
+
+.indexWrapper .skill .skillList {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: column;
+}
+
+.indexWrapper .skill .imgWrap {
+  width: 100px;
+  height: auto;
+}
+
+.indexWrapper .about {
+  width: 100%;
+  padding: 120px 0;
+  color: #fff;
+  background-color: #000;
+}
+
+
+.indexWrapper .about .content {
+  width: 100%;
+}
+
+.indexWrapper .about .content .bgWrap {
+  min-width: 300px;
+}
+
+.indexWrapper .about .content .bgWrap .portrait {
+  width: 100%;
+  padding-top: 156.3934%;
+  background-image: url(../img/aboutImg01.jpg);
+}
+
+.indexWrapper .about .content .aboutWrap .name {
+  margin-top: 30px;
+  font-size: 34px;
+}
+
+.indexWrapper .about .content .aboutWrap .text {
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.indexWrapper .contact {
+  width: 100%;
+  padding: 120px 0 80px;
+}
+
+.indexWrapper .contact .container {
+  display: flex;
+}
+
+.indexWrapper .contact .content {
+  width: 100%;
+}
+
+.indexWrapper .contact .content .contactWrap .text {
+  margin-top: 20px;
+}
+
+.indexWrapper .contact .content .bgWrap .typewriter {
+  width: 100%;
+  padding-top: 56.3934%;
+  background-image: url(../img/contactImg01.jpg);
+  opacity: 0.9;
+}
+
+ /* ========== article ========== */
+.articleWrapper {
+  padding: 120px 0 60px;
+}
+
+.articleWrapper .container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.articleWrapper .title {
+  text-align: center;
+}
+
+.articleWrapper .posts {
+  margin-top: 30px;
+}
+
+.articleWrapper  + .footer {
+  margin-top: 60px;
+}
+
+ /* ========== single ========== */
+.singleWrapper {
+  padding: 120px 0;
+}
+
+.singleWrapper .container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.singleWrapper .title {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'HiraKakuPro-W3', sans-serif;
+}
+
+.singleWrapper .deliverableWrap {
+  margin-top: 30px;
+}
+
+.singleWrapper .deliverableWrap .content dt:nth-child(n+2) {
+  margin-top: 30px;
+}
+
+.singleWrapper .deliverableWrap .content dd:nth-child(n+2) {
+  margin-top: 10px;
+}
+
+.singleWrapper  + .footer {
+  margin-top: 60px;
+}
+
+/* ========== skills ========== */
+.skillsWrapper {
+  padding: 120px 0;
+}
+
+.skillsWrapper .container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.skillsWrapper .title {
+  text-align: center;
+}
+
+.skillsWrapper .skills {
+  margin-top: 60px;
+}
+
+.skillsWrapper .skills .skill {
+  display: flex;
+  width: 50%;
+  min-width: 50%;
+}
+
+.skillsWrapper .skills .skill .imgWrap {
+  min-width: 150px;
+}
+
+.skillsWrapper .skills .skill .textWrap .heading {
+  font-weight: bold;
+}
+
+.skillsWrapper .skills .skill .textWrap .text {
+  margin-top: 10px;
+}
+
+.skillsWrapper  + .footer {
+  margin-top: 60px;
+}
+
+ /* ========== form ========== */
+.formWrapper {
+  padding: 120px 0 60px;
+}
+
+.formWrapper .container {
+  width: 96%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.formWrapper .title {
+  text-align: center;
+}
+
+.formWrapper .text {
+  margin-top: 30px;
+}
+
+.formWrapper .container .formWrap {
+  margin-top: 30px;
+}
+
+.formWrapper .container .formWrap dl:nth-child(n+2) {
+  margin-top: 30px;
+}
+
+.formWrapper .container .formWrap dd {
+  margin-top: 15px;
+}
+
+.formWrapper .container .formWrap .input {
+  width: 100%;
+  border: solid 1px #ccc ;
+}
+
+.formWrapper .container .formWrap .inputAria {
+  width: 100%;
+  height: 26px;
+  border: solid 1px #ccc;
+}
+
+.formWrapper .container .formWrap .inputAria:focus {
+  outline: solid 2px #ccc;
+}
+
+.formWrapper .container .formWrap textarea {
+  width: 100%;
+  height: 326px;
+  border: solid 1px #ccc;
+}
+
+.formWrapper .container .formWrap textarea:focus {
+  outline: solid 2px #ccc;
+}
+
+.formWrapper + .footer {
+  margin-top: 60px;
+}
+
+ /* ========== confirm ========== */
+.confirmWrapper {
+  padding: 120px 0;
+}
+
+.confirmWrapper .container {
+  width: 96%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.confirmWrapper .title {
+  text-align: center;
+}
+
+.confirmWrapper .text {
+  margin-top: 30px;
+}
+
+.confirmWrapper .container .text .emphasis {
+  font-weight: bold;
+}
+
+.confirmWrapper .container .contactWrap {
+  margin-top: 40px;
+}
+
+.confirmWrapper .container .items:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.confirmWrapper .container .items {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #eee;
+  line-height: 1;
+}
+
+.confirmWrapper .container .confirmWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.confirmWrapper .container .confirmWrap .btnWrap:nth-child(2) {
+  margin-left: 20px;
+}
+
+.confirmWrapper + .footer {
+  margin-top: 200px;
+}
+
+/* complete*/
+.completeWrapper {
+  padding: 120px 0;
+}
+
+.completeWrapper .container {
+  width: 96%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.completeWrapper .title {
+  text-align: center;
+}
+
+.completeWrapper .container .text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.completeWrapper .container .btnWrap {
+  margin-top: 30px;
+}
+
+.completeWrapper + .footer {
+  margin-top: 400px;
+}
+
+/* -----  max-width: 1024px ----- */
+@media screen and (max-width: 1024px) {
+  /* ========== skills ========== */
+  .skillsWrapper .skills {
+    align-items: center;
+  }
+
+  .skillsWrapper .skills .skill {
+    display: flex;
+    width: 100%;
+  }
+
+  .skillsWrapper .skills .skill:nth-child(n+2) {
+    margin-top: 30px;
+  }
+
+}
+
+/* -----  min-width: 641px ----- */
+@media screen and (min-width: 641px) {
+  .header .globalMenu .item:nth-child(n+2) {
+    margin-left: 20px;
+  }
+
+  .header .spMenu{
+    display: none;
+  }
+
+  .posts .post {
+    width: 32%;
+  }
+
+  .posts .post:nth-child(n+4)  {
+    margin-top: 22.8px;
+  }
+
+  /* ========== index ========== */
+  .indexWrapper .firstView .container .title {
+    font-size: 64px;
+  }
+
+  .indexWrapper .skill .skillList {
+    min-width: 340px;
+    margin-top: 20px;
+  }
+
+  .indexWrapper .about .content {
+    width: 100%;
+    display: flex;
+  }
+
+  .indexWrapper .about .content .portrait {
+    width: 32%;
+  }
+
+  .indexWrapper .about .content .aboutWrap {
+    margin-left: 30px;
+  }
+
+  .indexWrapper .contact .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .indexWrapper .contact .content .bgWrap {
+    width: 40%;
+    min-width: 360px;
+    margin-left: 30px;
+  }
+
+  /* ========== single ========== */
+  .singleWrapper .deliverableWrap {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .singleWrapper .deliverableWrap .imgWrap {
+    width: 36%;
+  }
+
+  .singleWrapper .deliverableWrap .content {
+    margin-left: 30px;
+    padding: 30px 0;
+  }
+
+  /* ========== skills ========== */
+  .skillsWrapper .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skillsWrapper .skills .skill:nth-child(n+3) {
+    margin-top: 30px;
+  }
+
+  /* ========== confirm ========== */
+  .confirmWrapper .container .items dt {
+    min-width: 244px;
+  }
+}
+
+/* -----  max-width: 640px ----- */
+@media screen and (max-width: 640px) {
+   /* body */
+  body.noscroll {
+    overflow: hidden;
+  }
+
+  /* header */
+  .header nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .header .globalMenu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .header .globalMenu .item {
+    width: 96%;
+    margin: 20px auto 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .header .globalMenu .item:first-child {
+    margin-top: 40px;
+  }
+
+  .header .globalMenu:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .header.headerColorScroll .spMenu .bar{
+    background-color: #fff;
+    transition: background-color 0.4s ease-out;
+  }
+
+  /* spMenu  */
+  .spMenu {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    background-color: transparent;
+  }
+
+  .spMenu .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: .3s;
+  }
+
+  .barTop,
+  .barMid {
+    margin-bottom: 8px;
+  }
+
+  .spMenu.cross .barTop {
+    transform: rotate(45deg) translate(8px, 8px);
+    transition: .3s;
+  }
+
+  .spMenu.cross .barMid {
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .spMenu.cross .barBottom {
+    transform: rotate(-45deg) translate(8px, -8px);
+    transition: .3s;
+  }
+
+  .posts .post {
+    width: 48%;
+  }
+
+  .posts .post:nth-child(n+3)  {
+    margin-top: 20px;
+  }
+
+  /* ========== index ========== */
+  .indexWrapper .firstView .container .title {
+    font-size: 48px;
+  }
+
+  .indexWrapper .skill .skillList {
+    margin: 20px auto 0;
+  }
+
+  .indexWrapper .about .content .aboutWrap {
+    margin-top: 30px;
+  }
+
+  .indexWrapper .about .content .bgWrap .portrait {
+    padding-top: 56.3934%;
+    background-position: 50% 25%;
+  }
+
+  .indexWrapper .contact .content .bgWrap {
+    margin-top: 20px;
+  }
+
+  /* ========== single ========== */
+  .singleWrapper .deliverableWrap .imgWrap {
+    width: 100%;
+  }
+
+  .singleWrapper .deliverableWrap .content {
+    margin-top: 30px;
+  }
+
+  /* ========== confirm ========== */
+  .confirmWrapper .container .items {
+    display: block;
+  }
+
+  .confirmWrapper .container .items dd {
+    margin-top: 20px;
+  }
+}
