@@ -21,6 +21,7 @@ function custom_enqueue(){
 function hooks() {
   add_filter("document_title_parts", "wp_document_title_parts", 10, 1 );
   add_action("wp_enqueue_scripts","custom_enqueue");
+  add_theme_support('post-thumbnails');
 }
 
 function init() {
