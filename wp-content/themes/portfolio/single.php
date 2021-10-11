@@ -7,11 +7,9 @@
       </h2>
       <div class="deliverableWrap">
         <div class="imgWrap">
-          <a href="">
-            <div class="bgImg thumbnail"
-              style="background-image: url(<?= the_post_thumbnail_url(); ?>);">
-            </div>
-          </a>
+          <div class="bgImg thumbnail"
+            style="background-image: url(<?= the_post_thumbnail_url(); ?>);">
+          </div>
         </div>
         <div class="content">
 <?php echo get_the_content(); ?>

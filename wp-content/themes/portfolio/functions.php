@@ -18,6 +18,17 @@ function custom_enqueue(){
   wp_enqueue_script("main_script", get_template_directory_uri() . "/assets/js/index.js", true);
 }
 
+function subLoop($number) {
+  $args = array(
+    "post_type" => "post",
+    "posts_per_page" => $number,
+    "paged" => "",
+  );
+
+  $theQuery = new WP_Query($args);
+  return $theQuery;
+}
+
 function hooks() {
   add_filter("document_title_parts", "wp_document_title_parts", 10, 1 );
   add_action("wp_enqueue_scripts","custom_enqueue");

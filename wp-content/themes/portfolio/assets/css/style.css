@@ -152,7 +152,7 @@ textarea {
 .thumbnail {
   width: 100%;
   padding-top: 156.3934%;
-  background-image: url(../img/postImg01.jpg);
+  /* background-image: url(../img/postImg01.jpg); */
 }
 
 /* ========== index ========== */

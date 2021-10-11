@@ -15,36 +15,22 @@
         </h2>
         <div class="postsWrap">
           <ul class="posts">
+<?php
+  $theQuery = subLoop(6);
+  if($theQuery->have_posts()):
+  while ($theQuery->have_posts()):
+  $theQuery->the_post();
+?>
             <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
+              <a href="<?= the_permalink();?>">
+                <div class="bgImg thumbnail"
+                  style="background-image: url(<?= the_post_thumbnail_url(); ?>);">
+                </div>
               </a>
             </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
           </ul>
         </div>
         <div class="anchorWrap">
