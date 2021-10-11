@@ -1,38 +1,25 @@
 <?php get_header(); ?>
 	<main class="singleWrapper">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="container">
       <h2 class="title">
-        制作名称
+<?php the_title(); ?>
       </h2>
       <div class="deliverableWrap">
         <div class="imgWrap">
           <a href="">
-            <div class="bgImg thumbnail"></div>
+            <div class="bgImg thumbnail"
+              style="background-image: url(<?= the_post_thumbnail_url(); ?>);">
+            </div>
           </a>
         </div>
-        <dl class="content">
-          <dt class="heading">
-            制作期間：
-          </dt>
-          <dd>
-            あああああああああ
-          </dd>
-          <dt class="heading">
-            制作内容：
-          </dt>
-          <dd>
-            いいいいいいいいいい
-          </dd>
-          <dt class="heading">
-            制作物URL：
-          </dt>
-          <dd>
-            <a href="">
-              https
-            </a>
-          </dd>
-        </dl>
+        <div class="content">
+<?php echo get_the_content(); ?>
+        </div>
       </div>
     </div>
+<?php endwhile; else: ?>
+    <p>Not Found Pages...</p>
+<?php endif; ?>
   </main>
 <?php get_footer(); ?>
