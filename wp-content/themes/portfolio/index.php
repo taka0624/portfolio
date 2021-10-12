@@ -15,36 +15,22 @@
         </h2>
         <div class="postsWrap">
           <ul class="posts">
+<?php
+  $theQuery = subLoop(6);
+  if($theQuery->have_posts()):
+  while ($theQuery->have_posts()):
+  $theQuery->the_post();
+?>
             <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
+              <a href="<?= the_permalink();?>">
+                <div class="bgImg thumbnail"
+                  style="background-image: url(<?= the_post_thumbnail_url(); ?>);">
+                </div>
               </a>
             </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
-            <li class="post">
-              <a href="">
-                <div class="bgImg thumbnail"></div>
-              </a>
-            </li>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
           </ul>
         </div>
         <div class="anchorWrap">
@@ -64,25 +50,25 @@
         </div>
         <ul class="skillList">
           <li class="imgWrap">
-            <img src="assets/img/html5.svg" alt="html5">
+            <img src="<?php echo get_theme_file_uri('assets/img/html5.svg'); ?>" alt="html5">
           </li>
           <li class="imgWrap">
-            <img src="assets/img/css3.svg" alt="css3">
+            <img src="<?php echo get_theme_file_uri('assets/img/css3.svg'); ?>" alt="css3">
           </li>
           <li class="imgWrap">
-            <img src="assets/img/jquery_logo.svg" alt="jQuery">
+            <img src="<?php echo get_theme_file_uri('assets/img/jquery_logo.svg'); ?>" alt="jQuery">
           </li>
           <li class="imgWrap">
-            <img src="assets/img/git.svg" alt="git">
+            <img src="<?php echo get_theme_file_uri('assets/img/git.svg'); ?>" alt="git">
           </li>
           <li class="imgWrap">
-            <img src="assets/img/github.svg" alt="github">
+            <img src="<?php echo get_theme_file_uri('assets/img/github.svg'); ?>" alt="github">
           </li>
           <li class="imgWrap">
-            <img src="assets/img/wordpress.svg" alt="wordpress">
+            <img src="<?php echo get_theme_file_uri('assets/img/wordpress.svg'); ?>" alt="wordpress">
           </li>
           <li class="imgWrap">
-            <img src="assets/img/visualstudio.svg" alt="vscode">
+            <img src="<?php echo get_theme_file_uri('assets/img/visualstudio.svg'); ?>" alt="vscode">
           </li>
         </ul>
         <div class="anchorWrap">
