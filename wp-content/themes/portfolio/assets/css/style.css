@@ -438,6 +438,10 @@ textarea {
   outline: solid 2px #ccc;
 }
 
+.formWrapper .container .confirmWrap {
+  margin-top: 20px;
+}
+
 .formWrapper + .footer {
   margin-top: 60px;
 }
@@ -483,7 +487,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .confirmWrapper .container .confirmWrap .btnWrap:nth-child(2) {
