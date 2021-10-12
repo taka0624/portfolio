@@ -469,15 +469,14 @@ textarea {
   margin-top: 40px;
 }
 
-.confirmWrapper .container .items:nth-child(n+2) {
-  margin-top: 20px;
-}
-
-.confirmWrapper .container .items {
-  display: flex;
+.confirmWrapper .container .contactWrap dl {
   padding-bottom: 20px;
   border-bottom: solid 1px #eee;
   line-height: 1;
+}
+
+.confirmWrapper .container .contactWrap dl:nth-child(n+2) {
+  margin-top: 20px;
 }
 
 .confirmWrapper .container .confirmWrap {
@@ -495,7 +494,7 @@ textarea {
   margin-top: 200px;
 }
 
-/* complete*/
+/* ==========  complete ========== */
 .completeWrapper {
   padding: 120px 0;
 }
@@ -620,7 +619,11 @@ textarea {
   }
 
   /* ========== confirm ========== */
-  .confirmWrapper .container .items dt {
+  .confirmWrapper .container .contactWrap dl {
+    display: flex;
+  }
+
+  .confirmWrapper .container .contactWrap dl dt {
     min-width: 244px;
   }
 }
@@ -752,11 +755,11 @@ textarea {
   }
 
   /* ========== confirm ========== */
-  .confirmWrapper .container .items {
+  .confirmWrapper .container .contactWrap {
     display: block;
   }
 
-  .confirmWrapper .container .items dd {
+  .confirmWrapper .container .contactWrap dl dd {
     margin-top: 20px;
   }
 }
