@@ -71,9 +71,6 @@
             <img src="<?php echo get_theme_file_uri('assets/img/visualstudio.svg'); ?>" alt="vscode">
           </li>
         </ul>
-        <div class="anchorWrap">
-          <a href="" class="anchor">show more</a>
-        </div>
       </div>
     </section>
     <section class="about">

@@ -1,15 +1,17 @@
-$(function () {
-  $(window).on("scroll", function () {
-    const sliderHeight = $(".firstView").height();
-    if (sliderHeight - 30 < $(this).scrollTop()) {
-      $(".js-header").removeClass("headerColorScroll");
-    } else {
-      $(".js-header").addClass("headerColorScroll");
-    }
-  });
-});
-
 jQuery(function ($) {
+
+  function changeScrollColor() {
+
+    const sliderHeight = $(".firstView").height();
+
+    $(window).on("scroll", function () {
+      if (sliderHeight - 30 < $(this).scrollTop()) {
+        $(".js-header").removeClass("headerColorScroll");
+      } else {
+        $(".js-header").addClass("headerColorScroll");
+      }
+    });
+  }
 
   function displaySpMenu() {
 
@@ -38,5 +40,6 @@ jQuery(function ($) {
   }
 
   displaySpMenu();
+  changeScrollColor();
 
 });

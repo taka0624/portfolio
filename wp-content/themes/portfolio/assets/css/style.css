@@ -47,11 +47,6 @@ textarea {
   transition: color 0.4s ease-out;
 }
 
-.header.headerColorScroll {
-  color: #fff;
-  transition: color 0.4s ease-out;
-}
-
 .header .inner {
   width: 96%;
   max-width: 1140px;
@@ -59,10 +54,85 @@ textarea {
   padding: 22px 0;
 }
 
+.header nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.9;
+  color: #fff;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 24px;
+}
+
 .header .globalMenu {
   display: flex;
-  justify-content: flex-end;
-  font-family: 'Abril Fatface', cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header .globalMenu .item {
+  width: 96%;
+  margin: 20px auto 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.header .globalMenu .item:first-child {
+  margin-top: 40px;
+}
+
+.header .globalMenu:last-of-type {
+  margin-bottom: 0;
+}
+
+/* spMenu  */
+.spMenu {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  background-color: transparent;
+}
+
+.spMenu .bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  transition: .3s;
+}
+
+.barTop,
+.barMid {
+  margin-bottom: 8px;
+}
+
+.spMenu.cross .barTop {
+  transform: rotate(45deg) translate(8px, 8px);
+  transition: .3s;
+}
+
+.spMenu.cross .barMid {
+  opacity: 0;
+  transition: .3s;
+}
+
+.spMenu.cross .barBottom {
+  transform: rotate(-45deg) translate(8px, -8px);
+  transition: .3s;
+}
+
+.home .headerColorScroll .spMenu .bar{
+  background-color: #fff;
+  transition: background-color 0.4s ease-out;
 }
 
 /* ----- footer ----- */
@@ -541,19 +611,10 @@ textarea {
   .skillsWrapper .skills .skill:nth-child(n+2) {
     margin-top: 30px;
   }
-
 }
 
 /* -----  min-width: 641px ----- */
 @media screen and (min-width: 641px) {
-  .header .globalMenu .item:nth-child(n+2) {
-    margin-left: 20px;
-  }
-
-  .header .spMenu{
-    display: none;
-  }
-
   .posts .post {
     width: 32%;
   }
@@ -639,47 +700,6 @@ textarea {
     overflow: hidden;
   }
 
-  /* header */
-  .header nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    opacity: 0.9;
-    color: #fff;
-    font-size: 24px;
-  }
-
-  .header .globalMenu {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .header .globalMenu .item {
-    width: 96%;
-    margin: 20px auto 0;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
-  .header .globalMenu .item:first-child {
-    margin-top: 40px;
-  }
-
-  .header .globalMenu:last-of-type {
-    margin-bottom: 0;
-  }
-
-  .header.headerColorScroll .spMenu .bar{
-    background-color: #fff;
-    transition: background-color 0.4s ease-out;
-  }
-
   /* spMenu  */
   .spMenu {
     display: block;
@@ -691,34 +711,7 @@ textarea {
     background-color: transparent;
   }
 
-  .spMenu .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    transition: .3s;
-  }
-
-  .barTop,
-  .barMid {
-    margin-bottom: 8px;
-  }
-
-  .spMenu.cross .barTop {
-    transform: rotate(45deg) translate(8px, 8px);
-    transition: .3s;
-  }
-
-  .spMenu.cross .barMid {
-    opacity: 0;
-    transition: .3s;
-  }
-
-  .spMenu.cross .barBottom {
-    transform: rotate(-45deg) translate(8px, -8px);
-    transition: .3s;
-  }
-
+  /* post */
   .posts .post {
     width: 48%;
   }
