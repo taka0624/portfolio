@@ -87,14 +87,6 @@ textarea {
   text-align: center;
 }
 
-.header .globalMenu .item:first-child {
-  margin-top: 40px;
-}
-
-.header .globalMenu:last-of-type {
-  margin-bottom: 0;
-}
-
 /* spMenu  */
 .spMenu {
   display: block;
@@ -311,7 +303,6 @@ textarea {
   background-color: #000;
 }
 
-
 .indexWrapper .about .content {
   width: 100%;
 }
@@ -453,7 +444,7 @@ textarea {
   margin-top: 10px;
 }
 
-.skillsWrapper  + .footer {
+.skillsWrapper + .footer {
   margin-top: 60px;
 }
 
