@@ -14,6 +14,10 @@ body {
   word-break: break-word;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 img {
   align-items: center;
   vertical-align: middle;
@@ -78,7 +82,7 @@ textarea {
 
 .header .globalMenu .item {
   width: 96%;
-  margin: 20px auto 0;
+  margin-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -222,7 +226,8 @@ textarea {
 .thumbnail {
   width: 100%;
   padding-top: 156.3934%;
-  /* background-image: url(../img/postImg01.jpg); */
+  background-size: cover;
+  background-position: top;
 }
 
 /* ========== index ========== */
@@ -399,12 +404,12 @@ textarea {
   margin-top: 30px;
 }
 
-.singleWrapper .deliverableWrap .content dt:nth-child(n+2) {
-  margin-top: 30px;
+.singleWrapper .deliverableWrap .imgWrap {
+  width: 100%;
 }
 
-.singleWrapper .deliverableWrap .content dd:nth-child(n+2) {
-  margin-top: 10px;
+.singleWrapper .deliverableWrap .content .textWrap p:nth-child(n+2) {
+  margin-top: 20px;
 }
 
 .singleWrapper  + .footer {
@@ -664,12 +669,12 @@ textarea {
     margin-top: 30px;
   }
 
-  .singleWrapper .deliverableWrap .imgWrap {
-    width: 36%;
+  .singleWrapper .deliverableWrap .imgWrap{
+    width: 30%;
   }
 
   .singleWrapper .deliverableWrap .content {
-    margin-left: 30px;
+    margin-left: 20px;
     padding: 30px 0;
   }
 
@@ -695,11 +700,6 @@ textarea {
 
 /* -----  max-width: 640px ----- */
 @media screen and (max-width: 640px) {
-   /* body */
-  body.noscroll {
-    overflow: hidden;
-  }
-
   /* spMenu  */
   .spMenu {
     display: block;
@@ -743,11 +743,8 @@ textarea {
   }
 
   /* ========== single ========== */
-  .singleWrapper .deliverableWrap .imgWrap {
-    width: 100%;
-  }
 
-  .singleWrapper .deliverableWrap .content {
+.singleWrapper .deliverableWrap .content {
     margin-top: 30px;
   }
 

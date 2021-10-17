@@ -2,7 +2,7 @@
 	<main class="articleWrapper">
     <div class="container">
       <h2 class="title">
-        Work
+        Works
       </h2>
       <ul class="posts">
 <?php
