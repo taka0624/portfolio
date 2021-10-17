@@ -34,7 +34,7 @@
           </ul>
         </div>
         <div class="anchorWrap">
-          <a href="" class="anchor">show more</a>
+          <a href="/article/" class="anchor">show more</a>
         </div>
       </div>
     </section>
@@ -71,9 +71,6 @@
             <img src="<?php echo get_theme_file_uri('assets/img/visualstudio.svg'); ?>" alt="vscode">
           </li>
         </ul>
-        <div class="anchorWrap">
-          <a href="" class="anchor">show more</a>
-        </div>
       </div>
     </section>
     <section class="about">
@@ -109,7 +106,7 @@
               制作依頼やご相談はお気軽にお問い合わせください。
             </p>
             <div class="anchorWrap">
-              <a href="" class="anchor">Contact page</a>
+              <a href="/contact_form/" class="anchor">Contact page</a>
             </div>
           </div>
           <div class="bgWrap">

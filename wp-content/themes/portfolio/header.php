@@ -5,32 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 	<header class="header js-header headerColorScroll">
 		<div class="inner">
 			<nav id="headerNav">
-				<ul class="globalMenu">
-          <li class="item">
-            <a href="">
-              Work
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              Skill
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              About
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              Contact
-            </a>
-          </li>
-        </ul>
+<?php wp_nav_menu(
+  array (
+    "theme_location" => "global-menu",
+    "menu_class" => "globalMenu",
+    "container" => "false",
+    'add_li_class' => "item",
+  )
+); ?>
 			</nav>
       <button class="spMenu" id="spMenu">
         <span class="bar barTop"></span>

@@ -12,7 +12,9 @@
           </div>
         </div>
         <div class="content">
+          <div class="textWrap">
 <?php echo get_the_content(); ?>
+          </div>
         </div>
       </div>
     </div>

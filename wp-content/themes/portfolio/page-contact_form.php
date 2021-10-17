@@ -8,35 +8,9 @@
         制作依頼やご相談はお気軽にお問い合わせください。
       </p>
       <div class="formWrap">
-        <form action="#" method="POST">
-          <dl>
-            <dt>
-              <label for="name">Name：</label>
-            </dt>
-            <dd>
-              <input type="text" class="input" id="name">
-            </dd>
-          </dl>
-          <dl>
-            <dt>
-              <label for="email">Email：</label>
-            </dt>
-            <dd>
-              <input type="email" class="input" id="email">
-            </dd>
-          </dl>
-          <dl>
-            <dt>
-              <label for="text">Message：</label>
-            </dt>
-            <dd>
-              <textarea id="text"></textarea>
-            </dd>
-          </dl>
-          <p class="btnWrap">
-            <input type="button" class="btn primaryBtn" value="Send">
-          </p>
-        </form>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php echo the_content(); ?>
+<?php endwhile; endif; ?>
       </div>
     </div>
   </main>
