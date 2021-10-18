@@ -611,6 +611,7 @@ textarea {
 
 /* -----  min-width: 641px ----- */
 @media screen and (min-width: 641px) {
+  /* post */
   .posts .post {
     width: 32%;
   }
@@ -734,8 +735,7 @@ textarea {
   }
 
   /* ========== single ========== */
-
-.singleWrapper .deliverableWrap .content {
+  .singleWrapper .deliverableWrap .content {
     margin-top: 30px;
   }
 
