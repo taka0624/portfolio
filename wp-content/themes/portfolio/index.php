@@ -34,7 +34,7 @@
           </ul>
         </div>
         <div class="anchorWrap">
-          <a href="<<?php echo esc_url( home_url( '/' ) ); ?>/article/" class="anchor">show more</a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>/article/" class="anchor">show more</a>
         </div>
       </div>
     </section>
