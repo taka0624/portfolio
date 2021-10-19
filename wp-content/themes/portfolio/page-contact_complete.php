@@ -8,7 +8,7 @@
 <?php echo the_content(); ?>
 <?php endwhile; endif; ?>
       <p class="btnWrap">
-        <a class="btn primaryBtn" href="<?php echo home_url() ?>">
+        <a class="btn primaryBtn" href="<?php echo esc_url( home_url( '/' ) ); ?>">
           Top Page
         </a>
       </p>
